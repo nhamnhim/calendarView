@@ -8,7 +8,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.widget.TextView;
 
-import ez.andm.ui.materialcalendar.format.TitleFormatter;
+import com.quankb.calendar.materialcalendar.format.TitleFormatter;
 
 class TitleChanger {
 

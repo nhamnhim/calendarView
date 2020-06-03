@@ -1,7 +1,7 @@
 package com.quankb.calendar.materialcalendar;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.SparseArrayCompat;
+import androidx.annotation.NonNull;
+import androidx.collection.SparseArrayCompat;
 
 /**
  * Pager adapter backing the calendar view

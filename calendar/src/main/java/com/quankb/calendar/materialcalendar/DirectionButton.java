@@ -1,5 +1,6 @@
 package com.quankb.calendar.materialcalendar;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.PorterDuff;
 import android.os.Build;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
  * An {@linkplain ImageView} to pragmatically set the color of arrows
  * using a {@linkplain android.graphics.ColorFilter}
  */
+@SuppressLint("AppCompatCustomView")
 class DirectionButton extends ImageView {
 
     public DirectionButton(Context context) {
