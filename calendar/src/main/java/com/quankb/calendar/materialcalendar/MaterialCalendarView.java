@@ -205,14 +205,14 @@ public class MaterialCalendarView extends ViewGroup {
                     R.styleable.MaterialCalendarView_mcv_leftArrowMask
             );
             if (leftMask == null) {
-                leftMask = getResources().getDrawable(R.drawable.mcv_action_previous);
+                leftMask = getResources().getDrawable(R.drawable.ic_previous);
             }
             setLeftArrowMask(leftMask);
             Drawable rightMask = a.getDrawable(
                     R.styleable.MaterialCalendarView_mcv_rightArrowMask
             );
             if (rightMask == null) {
-                rightMask = getResources().getDrawable(R.drawable.mcv_action_next);
+                rightMask = getResources().getDrawable(R.drawable.ic_next);
             }
             setRightArrowMask(rightMask);
 
@@ -289,7 +289,7 @@ public class MaterialCalendarView extends ViewGroup {
         addView(topbar, new LayoutParams(1));
 
         buttonPast.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        buttonPast.setImageResource(R.drawable.mcv_action_previous);
+        buttonPast.setImageResource(R.drawable.ic_previous);
         buttonPast.setPadding(20, 20, 20, 20);
         topbar.addView(buttonPast, new LinearLayout.LayoutParams(0, LayoutParams.MATCH_PARENT, 1));
 
@@ -299,7 +299,7 @@ public class MaterialCalendarView extends ViewGroup {
         ));
 
         buttonFuture.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
-        buttonFuture.setImageResource(R.drawable.mcv_action_next);
+        buttonFuture.setImageResource(R.drawable.ic_next);
         buttonFuture.setPadding(20, 20, 20, 20);
         topbar.addView(buttonFuture, new LinearLayout.LayoutParams(0, LayoutParams.MATCH_PARENT, 1));
 
