@@ -287,10 +287,11 @@ public class MaterialCalendarView extends ViewGroup {
         topbar.setClipChildren(false);
         topbar.setClipToPadding(false);
         addView(topbar, new LayoutParams(1));
+        int padding = 45;
 
-        buttonPast.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        buttonPast.setScaleType(ImageView.ScaleType.CENTER_CROP);
         buttonPast.setImageResource(R.drawable.ic_previous);
-        buttonPast.setPadding(20, 20, 20, 20);
+        buttonPast.setPadding(padding, padding, padding, padding);
         topbar.addView(buttonPast, new LinearLayout.LayoutParams(0, LayoutParams.MATCH_PARENT, 1));
 
         title.setGravity(Gravity.CENTER);
@@ -298,9 +299,9 @@ public class MaterialCalendarView extends ViewGroup {
                 0, LayoutParams.MATCH_PARENT, DEFAULT_DAYS_IN_WEEK - 2
         ));
 
-        buttonFuture.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+        buttonFuture.setScaleType(ImageView.ScaleType.CENTER_CROP);
         buttonFuture.setImageResource(R.drawable.ic_next);
-        buttonFuture.setPadding(20, 20, 20, 20);
+        buttonFuture.setPadding(padding, padding, padding, padding);
         topbar.addView(buttonFuture, new LinearLayout.LayoutParams(0, LayoutParams.MATCH_PARENT, 1));
 
         pager.setId(R.id.mcv_pager);
